@@ -1,0 +1,269 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+}
+.header{
+	background-color: #00fc9a;
+	padding-top: 50px;
+	padding-bottom: 105px;
+}
+
+ul,li{
+	display: block;
+	color: #010101;
+	margin: 0;
+	padding:0;
+}
+.menu{
+	margin-top: 10px;
+}
+.menu__item{
+	margin: 0 57px;
+}
+.menu__item a{
+	font-size: 22px;
+	font-weight: 700;
+	color: black;
+}
+.icons-items{
+	margin-right: 30px;
+
+}
+.icons{
+	margin-top: 43px;
+}
+.icon-items a{
+	transition: all 0.3a ease;
+}
+.icons-items a:hover{
+	text-decoration: none;
+	color: #ff4800;
+	 
+}
+
+h1,h2,h3,h4,h5
+{
+	font-weight: 700;
+	color: #000;
+
+}
+h3{
+	font-weight: 400;
+}
+h2{
+	text-align: center;
+}
+.offer{
+	margin-top: 117px;
+}
+.offer__title{
+	
+	margin-bottom: 15px;
+	font-size: 32px;
+}
+.offer__intro{
+	font-size: 20px;
+	line-height: 1.3em;
+	width: 310px; /*ХОРОШИЙ ПРИЕМЧИК*/
+}
+.offer__text{
+	font-size: 16px;
+	margin-top: 5px;
+	color:#555555;
+	width: 400px;
+}
+.ipad{
+	margin-top: 67px;
+	display: block; /*ОТЛИЧНЫЙ ПРИЕМ*/
+	margin-left: auto;
+	margin-right: auto; 
+ }
+
+/*рздел features*/
+.features{
+	padding-bottom: 100px;
+}
+.title{
+	text-align:center;
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+.title-main{
+ font-size:30px;
+}
+.title-text{
+	font-size:20px;
+	width: 780px; /*важно!!! но при этом в медиа запросах нужно поставить width:auto; для адаптивности*/
+	margin:0 auto;
+	 
+
+}
+
+.fully-responsive{
+	font-size: 25px;
+}
+.text-fully-respon{
+	font-size: 16px;
+	color:#555555;
+}
+.fully-respon-all{
+	width:250px;
+	margin-left: 35px;
+}
+.htmlcss-text{
+	width:250px;
+	margin-left: 16px;
+}
+.htmlcss-text{
+	width:250px;
+	margin-left: 16px;
+}
+.free-to-download{
+	width:250px;
+	margin-left: 46px;
+}
+.email-template{
+	width:250px;
+	margin-left: 31px;
+}
+.two-ryad{
+	margin-top: 90px;
+}
+
+
+
+/*Раздел Keep in touch*/
+
+
+.keep-in-touch{
+	color:#fcdb00;
+	font-size: 35px;
+}
+.touch{
+	background-color: #000000;
+	/*padding-top: 50px;
+	padding-bottom: 105px;*/
+}
+.title-text-touch{
+	color:#898989;
+	font-size: 20px;
+	width: 760px;
+	margin: 0 auto;
+}
+
+.form{
+	text-align: center;
+	margin-bottom: 57px;
+}
+.form-input{
+	background: #fff;
+	font-size: 16px;
+	border-radius:5px;
+  max-width:100%;/*таким образом задаем адаптивный рамер инпута */
+	width: 580px; /*а чтобы был четкий его размер делаем посредством max-width;*/
+	padding: 15px;
+	padding-left: 23px;
+	border:0;
+	outline: none;
+	margin-right: 21px;
+	font-family: 'PT Sans', sans-serif; /*шрифты в формах не наследуются это глюк*/
+}
+.submit-email{
+background:#fcdb00;
+width: 126px;
+font-size: 17px;
+font-weight: 900;
+border: 0; /*обычно граница белую чтобы убрать  */
+text-transform: uppercase;
+padding: 14px 0; /*для задания высоты */
+border-radius:5px;
+cursor:pointer;
+font-family: 'PT Sans', sans-serif;
+}
+
+
+
+
+
+
+/*раздел футер*/
+.footer{
+	background-color: #000000;
+}
+.title-footer{
+	 
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.2;
+	padding-bottom: 104px;
+}
+.title-footer h5{
+color: #ffffff;	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px)
+{
+	 
+	.offer{
+		text-align: center;
+	}
+	.offer__intro{
+		margin: 0 auto;
+	 
+	}
+	.offer__text{
+		width: auto;
+	}
+	.title-text{
+		width: auto;
+	}
+	.title-text-touch{
+		width: auto;
+	}
+	.icons{
+		justify-content: center;
+	}
+
+	.colonki{
+		 justify-content: center; /*Важно!!! flex колонки выравнивать marginom не получить!!! */
+		 
+	}
+	.two-ryad{
+	margin-top: 20px;
+	}
+	.submit-email{
+		width: 100%;
+		margin-top: 20px; 
+	}
+	.form-input{
+		width: 100%;
+	}
+
+} 
+
+@media screen and (max-width:576px)
+{
+	.ipad{
+		width: 100%;
+	}
+	.menu{
+		flex-direction: column;
+		margin: 50px auto 0 auto;
+	}
+	.menu__item{
+		text-align: center;
+		margin-bottom:10px;
+	}
+
+ }
